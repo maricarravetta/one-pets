@@ -8,6 +8,6 @@ Márcio Santos Carvalho
 
 Mariana Carravetta Custodio dos Santos
 
-Priscilla da Silva Corrêa Ferreira
+Priscillla da Silva Corrêa Ferreira
 
 Pâmela Daniele Pereira Costa
