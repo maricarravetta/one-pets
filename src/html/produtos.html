@@ -7,17 +7,69 @@
 </head>
 <body>
     <header>
+        <img src="/src/img/logo_temporaria.jpg" height="150" width="auto" alt="Logo temporária one pet">
         <nav>
             <ul>
-                <li>Home</li>
-                <li>Carrinho de compras</li>
-                <li>Checkout</li>
-                <li>Suporte e FAQ</li>
+                <a href="index.html"><li>Home</li></a>
+                <a href="carrinho.html"><li>Carrinho de compras</li></a>
+                <a href="checkout.html"><li>Checkout</li></a>
+                <a href="suporte.html"><li>Suporte e FAQ</li></a>
             </ul>
         </nav>
     </header>
     <main>
+        <section class="filters">
+             <form>
+                <label for="category">Categoria:</label>
+                 <select id="category">
+                    <option value="all">Todas</option>
+                    <option value="caminhas">Caminhas</option>
+                    <option value="coleiras">Coleiras</option>
+                    <option value="roupinhas">Roupinhas</option>
+                    <option value="brinquedos">Brinquedos</option>
+                    </select>
+                </form>
+        </section>
         
+        <section class="products">
+            <div class="product">
+                <img src="/src/img/caminha.png" alt="Caminha personalizada">
+                <h3>Caminha personalizada com nome do seu Pet</h3>
+                <p>A mais confortável!</p>
+                <span>R$ 250,00</span>
+                <button>Adicionar ao carrinho</button>
+            </div>
+        </section>
+
+        <section class="products">
+            <div class="product">
+                <img src="/src/img/coleira.png" alt="Coleira personalizada">
+                <h3>Coleira personalizada com nome do seu Pet</h3>
+                <p>A mais charmosa!</p>
+                <span>R$ 90,00</span>
+                <button>Adicionar ao carrinho</button>
+            </div>
+        </section>
+
+        <section class="products">
+            <div class="product">
+                <img src="/src/img/roupinha.png" alt="Roupinha personalizada">
+                <h3>Roupinha personalizada com nome do seu Pet</h3>
+                <p>A mais estilosa!</p>
+                <span>R$ 50,00</span>
+                <button>Adicionar ao carrinho</button>
+            </div>
+        </section>
+
+        <section class="products">
+            <div class="product">
+                <img src="/src/img/brinquedo.png" alt="Brinquedo personalizado">
+                <h3>Brinquedo personalizado com nome do seu Pet</h3>
+                <p>O mais divertido!</p>
+                <span>R$ 30,00</span>
+                <button>Adicionar ao carrinho</button>
+            </div>
+        </section>
     </main>
     
     <footer>
