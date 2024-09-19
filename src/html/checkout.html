@@ -18,6 +18,24 @@
         </nav>
     </header>
     <main>
+        <div class="container"></div>
+            <h3>Resumo do seu pedido</h3>
+            <ul id="itens-pedido"></ul>
+            <p><strong>Valor Total dos Produtos:</strong> <span id="valor-total"></span></p>
+            <p><strong>CEP:</strong> <input type="text" id="cep" placeholder="Digite seu CEP"></p>
+            <button type="button" onclick="calcularFrete()">Calcular Frete</button>
+            <p><strong>Frete:</strong> <span id="frete"></span></p>
+            <p><strong>Prazo de Entrega:</strong> <span id="prazo"></span></p>
+            <p><strong>Valor Total com Frete:</strong> <span id="valor-total-com-frete"></span></p>
+            <button type="submit">Confirmar Pedido</button>
+
+            <h3>Formas de Pagamento</h3>
+            <input type="radio" id="pix" name="pagamento" value="pix">
+            <label for="pix">PIX</label><br>
+            <input type="radio" id="cartao" name="pagamento" value="cartao">
+            <label for="cartao">Cartão de Crédito/Débito</label>  
+        <div id="dados-cartao" style="display: none;">
+                </div>
         
     </main>
     
