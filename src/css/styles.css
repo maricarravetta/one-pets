@@ -1,0 +1,111 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #E5CAFF; /* Cor complementar */
+    color: #2A4059; /* Cor da Tipografia */
+}
+
+/* Estilização do cabeçalho */
+header {
+    background-color: #E47AEA; /* Cor principal */
+    padding: 20px;
+    text-align: center;
+}
+
+header img {
+    max-height: 100px;
+}
+
+nav ul {
+    list-style-type: none;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #2A4059; /* Cor da Tipografia */
+    font-weight: bold;
+}
+
+/* Estilização da seção de filtros */
+.filters {
+    padding: 20px;
+    text-align: center;
+}
+
+.filters form {
+    display: inline-block;
+}
+
+/* Estilização da seção de produtos */
+.products {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 20px 0;
+}
+
+.product {
+    background-color: #FFC6FF; /* Cor secundária */
+    border: 2px solid #E47AEA; /* Cor principal */
+    border-radius: 10px;
+    padding: 15px;
+    margin: 10px;
+    width: 200px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+.product img {
+    max-width: 100%; 
+    height: auto; 
+    border-radius: 10px; 
+}
+
+.product:hover {
+    transform: scale(1.05);
+}
+
+/* Estilização do botão */
+button {
+    background-color: #E47AEA; /* Cor principal */
+    color: #FFFFFF;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 15px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #D35BC1; /* Tom mais escuro do roxo */
+}
+
+/* Estilização do rodapé */
+footer {
+    background-color: #E5CAFF; /* Cor complementar */
+    padding: 20px;
+    text-align: center;
+}
+
+footer ul {
+    list-style-type: none;
+    padding: 10px 0;
+}
+
+footer a {
+    text-decoration: none;
+    color: #2A4059; /* Cor da Tipografia */
+    margin: 0 10px;
+}
