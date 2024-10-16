@@ -4,61 +4,83 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Suporte</title>
+    <link rel="stylesheet" href="/src/css/style_home.css">
 </head>
 <body>
     <header>
-        <img src="/src/img/logo_temporaria.jpg" height="150" width="auto" alt="Logo temporária one pet">
-        <nav>
-            <ul>
-                <a href="index.html"><li>Home</li></a>
-                <a href="produtos.html"><li>Produtos</li></a>
-                <a href="carrinho.html"><li>Carrinho de compras</li></a>
-                <a href="checkout.html"><li>Checkout</li></a>
-            </ul>
+        <img src="../../Imagens/logo_Oficial.png" height="150" width="auto" alt="Logo temporária One Pet">
+        <div class="search-bar">
+            <input type="text" class="search-input" placeholder="O que você procura?">
+            <button class="search-button">
+                <img src="../../Imagens/Home/icone-lupa.png" alt="icone-lupa">
+            </button>
+        </div>
+        <nav class="nav-links">
+            <a href="">
+                <img src="../../Imagens/Home/icone-clube.png" alt="icone-newslater"> Clube One-Pet
+            </a>
+            <a href="produtos.html">
+                <img src="../../Imagens/Home/icone-newslater.png" alt="icone-newslater"> Newsletter
+            </a>
+            <a href="carrinho.html">
+                <img src="../../Imagens/Home/icone-usuario.png" alt="icone-usuario"> Logar
+            </a>
+            <a href="checkout.html">
+                <img src="../../Imagens/Home/icone-carrinho.png" alt="icone-carrinho"> Meu Carrinho
+            </a>
         </nav>
-    </header>
-    <main>
-        <section class="contato-informacao">
-            <h2>Entre em Contato</h2>
-            <p>Estamos aqui para ajudar! Se você tiver dúvidas ou precisar de assistência, entre em contato conosco pelos seguintes meios:</p>
-            <ul>
-                <li>Email: suporte@onepet.com</li>
-                <li>Telefone: (99) 99999-9999</li>
-                <li>Endereço: Rua dos Animais, 123, Belém, PA</li>
-            </ul>
-        </section>
-
-        <section class="contato-formulario">
-            <h2>Formulário de Contato</h2>
-            <form action="#">
-                <!--Adicionar o nome-->
-                <label for="name">Nome:</label>
-                <input type="text" id="name" name="name" required>
-                <!--Adicionar o email-->
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required>
-                <!--Adicionar uma mensagem-->
-                <label for="message">Mensagem:</label>
-                <textarea id="message" name="message" rows="5" required></textarea>
-    
-                <button type="submit">Enviar</button>
-            </form>
-
-        <section class="chat">
-            <h2>Chat Online</h2>
-            <p>Clique no botão abaixo para iniciar uma conversa com um de nossos atendentes:</p>
-            <button>Iniciar Chat</button>
-        </section>
         
+    </header>
+    <section id="clube-one-pet">
+        <span>Clique aqui para conhecer o Clube One-Pet e garantir <strong>Descontos imperdíveis</strong></span>
+    </section>
+    <main>
+        <section>
+            <div class="container">
+                <div class="contato">
+                    <h2>Vamos conversar</h2>
+                    <p class="descricao">Entre em contato, adoraríamos conhecer você e seu melhor amigo! Se você tiver dúvidas ou precisar de assistência, entre em contato conosco pelos seguintes meios:</p>
+                    <ul class="lista-contato">
+                        <li>Email: suporte@onepet.com</li>
+                        <li>Telefone: (99) 99999-9999</li>
+                        <li>Endereço: Rua dos Animais, 123, Belém, PA</li>
+                    </ul>
+                </div>
+                <div class="formulario">
+                    <form action="#">
+                        <label for="name">Nome</label>
+                        <input type="text" id="name" name="name" required>
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required>
+                        <label for="service">Em qual serviço você está interessado?</label>
+                        <select id="service" name="service">
+                            <option>Selecione o tipo de projeto</option>
+                        </select>
+                        <label for="message">Mensagem</label>
+                        <textarea id="message" name="message" rows="5" required></textarea>
+                        <button type="submit">Enviar</button>
+                    </form>
+                </div>              
+            </div>
+        </section>
+        <section class="chat-whatsapp">
+            <div class="chat-container">
+                <h2>Chat pelo WhatsApp</h2>
+                <p>Clique no botão abaixo para iniciar uma conversa com um de nossos atendentes via WhatsApp</p>
+                <a href="https://wa.me/5599999999999" target="_blank" class="whatsapp-button">
+                    <img src="https://cdn-icons-png.flaticon.com/512/174/174879.png" alt="Ícone do WhatsApp">
+                    Iniciar Chat
+                </a>
+            </div>
+        </section>            
     </main>
-    
     <footer>
-        <img src="" alt="">
         <ul>
-           <a href="https://web.facebook.com/"><li>Facebook</li></a>
-           <a href="https://www.instagram.com/"><li>Instagram</li></a>
-           <a href="https://www.linkedin.com/"><li>Linkedin</li></a>
-       </ul>
+            <a href="https://web.facebook.com/"><li>Facebook</li></a>
+            <a href="https://www.instagram.com/"><li>Instagram</li></a>
+            <a href="https://www.linkedin.com/"><li>Linkedin</li></a>
+            <a href="suporte.html"><li>Fale Conosco</li></a>
+        </ul>
     </footer>
 </body>
 </html>

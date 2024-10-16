@@ -236,6 +236,135 @@ header img {
     transform: scale(1.05);
 }
 
+/*Suporte*/
+/* Estilos do Main */
+.container {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 40px;
+    background-color: #f0f0f0;
+    
+}
+
+.contato, .formulario {
+    flex: 1;
+    padding: 30px;
+    text-align: justify;
+    h2{
+        margin-bottom: 20px;
+        font-size: 50px;
+
+    }
+    
+}
+
+.contato .descricao {
+    font-size: 16px;
+    line-height: 1.6;
+    margin-right: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px; /* Aumentei o espaçamento para melhorar a legibilidade */
+    font-size: 16px;
+    max-width: 600px; /* Limitei a largura máxima */
+    margin: 0 auto; /* Centraliza o formulário */
+    margin-top: 30px;
+}
+
+form input, form textarea, form select, form button {
+    width: 100%;
+    padding: 12px; /* Aumentei um pouco o padding para melhor conforto ao digitar */
+    font-size: 16px;
+    border: 1px solid #ccc; /* Bordas leves para destacar os campos */
+    border-radius: 5px; /* Cantos arredondados */
+    box-sizing: border-box;
+}
+
+/* Estilo do botão com gradiente */
+form button {
+    background-image: linear-gradient(to right, #E47AEA, #ff7bed);
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding: 12px;
+    font-size: 18px;
+}
+
+form button:hover {
+    background-color: #2A4059; /* Cor do botão ao passar o mouse */
+}
+
+/* Lista de contato */
+.lista-contato {
+    list-style-type: none;
+    
+}
+.lista-contato li {
+    font-size: 16px;
+    margin-top: 20px;
+    line-height: 1.5;
+}
+/* Personalização para itens da lista */
+.lista-contato li::before {
+    content: "•";
+    color: #E47AEA;
+    font-weight: bold;
+    display: inline-block;
+    width: 1em;
+    margin-right: 10px;
+    -webkit-text-stroke: 3px;
+}
+
+/* Estilos da seção de chat do WhatsApp */
+.chat-whatsapp {
+    padding: 40px;
+    background-color: #f0f0f0;
+    text-align: center;
+    border-radius: 8px;
+}
+
+.chat-container h2 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.chat-container p {
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 20px;
+    line-height: 1.6;
+}
+
+/* estilos do botão do whatsApp */
+.whatsapp-button {
+    display: inline-flex;
+    align-items: center;
+    background-color: #E47AEA;
+    color: white;
+    padding: 10px 20px;
+    font-size: 18px;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.whatsapp-button img {
+    margin-right: 10px;
+    width: 24px;
+    height: 24px;
+}
+
+.whatsapp-button:hover {
+    background-color: #2A4059;
+}
+
+
 /* Footer */
 footer {
     background-color: #2A4059;    
