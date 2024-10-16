@@ -1,0 +1,143 @@
+
+
+
+/* faixa do clube One-pet*/
+#clube-one-pet {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    padding: 10px 20px;
+    background-color: #E5CAFF; /* Lavanda */
+}
+
+#clube-one-pet span {
+
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+
+/* Carrossel */
+#carrossel {
+    margin: 20px 0;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+
+#carrossel h2 {
+    font-size: 1.8em;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.carrossel-container {
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    position: relative;
+}
+
+.carrossel-imagens {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.carrossel-imagens img {
+    width: 22.22%;
+    flex-shrink: 0;
+    border-radius: 10px;
+}
+
+.anterior, .proximo {
+    background-color: #E47AEA;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 1em;
+    z-index: 2;
+}
+
+.anterior {
+    left: 0;
+}
+
+.proximo {
+    right: 0;
+}
+
+.anterior:hover, .proximo:hover {
+    background-color: #FFC6FF;
+}
+
+/* Seção Destaques */
+#destaques {
+    padding: 40px 20px;
+    background-color: #E5CAFF;
+}
+
+#destaques h2 {
+    font-size: 2em;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#destaques div {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+#destaques article {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    flex: 1;
+    min-width: 250px;
+    text-align: center;
+}
+
+#destaques h3 {
+    font-size: 1.4em;
+    margin-bottom: 10px;
+}
+
+/* Seção Produtos */
+#produtos {
+    padding: 40px 20px;
+    background-color: #f9f9f9;
+}
+
+#produtos h2 {
+    font-size: 2em;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#produtos div {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+#produtos div img {
+    width: 100%;
+    max-width: 300px;
+    border-radius: 10px;
+    transition: transform 0.3s;
+}
+
+#produtos div img:hover {
+    transform: scale(1.05);
+}
+
+
