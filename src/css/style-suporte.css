@@ -1,0 +1,252 @@
+/* Estilo global */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+    color: #2A4059; /* Azul marinho da tipografia */
+}
+
+body {
+    background-color: #f9f9f9; /* Fundo neutro */
+    color: #2A4059;
+}
+
+/* Cabeçalho */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    /*background-color: #E47AEA;  Roxo vibrante */    
+}
+
+header img {
+    height: 100px;
+    width: auto;
+}
+
+.search-bar {
+    display: flex;
+    align-items: center;
+    background-color: hsl(0, 0%, 96%);
+    border-radius: 10px;
+    overflow: hidden;
+    width:500px;
+    height: auto;
+}
+
+.search-input {
+    flex: 1;
+    border: solid 1px;
+    border-radius: 10px 0px 0px 10px;
+    border-style: groove;
+    padding: 10px;
+    font-size: 16px;
+}
+
+.search-button {
+    background-color: #2A4059;
+    height: 40px;
+    width: 40px;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.search-button:hover {
+    background-color: #FFC6FF;
+}
+
+.search-button img {
+    width: 100%; /* Ajusta a largura da imagem como porcentagem do botão */
+    height: auto; /* Mantém a proporção da imagem */
+}
+
+/* Estilo para a barra de navegação horizontal */
+.nav-links {
+    display: flex; /* Exibe os itens em linha */
+    justify-content: flex-end; /* Alinha os itens à direita */
+    align-items: center; /* Alinha verticalmente no centro */
+    gap: 20px; /* Espaçamento entre os links */    
+    padding: 10px 20px; /* Espaçamento dentro da barra */
+    font-family: Arial, sans-serif; /* Fonte padrão */
+}
+
+.nav-links a {
+    display: flex; /* Exibe ícones e texto na mesma linha */
+    align-items: center; /* Centraliza verticalmente ícones e texto */
+    text-decoration: none; /* Remove sublinhado dos links */
+    color: #2A4059; /* Cor do texto */
+    font-size: 1.1em; /* Tamanho da fonte */
+    font-weight: bold; /* Negrito */
+}
+
+.nav-links a img {
+    width: 20px; /* Tamanho dos ícones */
+    height: auto;
+    margin-right: 10px; /* Espaçamento entre ícone e texto */
+}
+
+.nav-links a:hover {
+    color: #E47AEA; /* Muda a cor do texto ao passar o mouse */
+    transition: color 0.3s ease; /* Transição suave para a mudança de cor */
+}
+
+/*Suporte*/
+/* Estilos do Main */
+.container {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 40px;
+    background-color: #f0f0f0;
+
+}
+
+.contato, .formulario {
+    flex: 1;
+    padding: 30px;
+    text-align: justify;
+    h2{
+        margin-bottom: 20px;
+        font-size: 50px;
+
+    }
+
+}
+
+.contato .descricao {
+    font-size: 16px;
+    line-height: 1.6;
+    margin-right: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px; /* Aumentei o espaçamento para melhorar a legibilidade */
+    font-size: 16px;
+    max-width: 600px; /* Limitei a largura máxima */
+    margin: 0 auto; /* Centraliza o formulário */
+    margin-top: 30px;
+}
+
+form input, form textarea, form select, form button {
+    width: 100%;
+    padding: 12px; /* Aumentei um pouco o padding para melhor conforto ao digitar */
+    font-size: 16px;
+    border: 1px solid #ccc; /* Bordas leves para destacar os campos */
+    border-radius: 5px; /* Cantos arredondados */
+    box-sizing: border-box;
+}
+
+/* Estilo do botão com gradiente */
+form button {
+    background-image: linear-gradient(to right, #E47AEA, #ff7bed);
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding: 12px;
+    font-size: 18px;
+}
+
+form button:hover {
+    background-color: #2A4059; /* Cor do botão ao passar o mouse */
+}
+
+/* Lista de contato */
+.lista-contato {
+    list-style-type: none;
+
+}
+.lista-contato li {
+    font-size: 16px;
+    margin-top: 20px;
+    line-height: 1.5;
+}
+/* Personalização para itens da lista */
+.lista-contato li::before {
+    content: "•";
+    color: #E47AEA;
+    font-weight: bold;
+    display: inline-block;
+    width: 1em;
+    margin-right: 10px;
+    -webkit-text-stroke: 3px;
+}
+
+/* Estilos da seção de chat do WhatsApp */
+.chat-whatsapp {
+    padding: 40px;
+    background-color: #f0f0f0;
+    text-align: center;
+    border-radius: 8px;
+}
+
+.chat-container h2 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.chat-container p {
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 20px;
+    line-height: 1.6;
+}
+
+/* estilos do botão do whatsApp */
+.whatsapp-button {
+    display: inline-flex;
+    align-items: center;
+    background-color: #E47AEA;
+    color: white;
+    padding: 10px 20px;
+    font-size: 18px;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.whatsapp-button img {
+    margin-right: 10px;
+    width: 24px;
+    height: 24px;
+}
+
+.whatsapp-button:hover {
+    background-color: #2A4059;
+}
+
+/* Footer */
+footer {
+    background-color: #2A4059;    
+    padding: 20px;
+    text-align: center;
+}
+
+footer ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+footer ul li {
+    transition: color 0.3s;
+    color: white;
+}
+
+footer ul li:hover {
+    color: #E47AEA;
+}
+
+footer ul a {
+    text-decoration: none;
+    color: white
+    
+}
