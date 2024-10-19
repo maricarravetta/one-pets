@@ -1,0 +1,76 @@
+body {
+    display: flex;
+    flex-direction: column; /* Alinha os elementos em coluna */
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0; /* Cor de fundo opcional */
+}
+
+header img {
+    max-width: 100%; /* Garante que a imagem não ultrapasse a largura do contêiner */
+    margin-bottom: 20px; /* Espaçamento entre a imagem e o container */
+}
+
+.login-container {
+    background-color: white;
+    width: 350px;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #E47AEA; /* Roxo Vibrante */
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input {
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #E47AEA; /* Roxo Vibrante */
+    border-radius: 5px;
+}
+
+button {
+    background-color: #E47AEA; /* Roxo Vibrante */
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #FFC6FF; /* Rosa Claro */
+}
+
+p {
+    text-align: center;
+    margin-top: 20px;
+    color: #2A4059; /* Azul Marinho */
+}
+
+p a {
+    color: #E47AEA; /* Roxo Vibrante */
+    text-decoration: none;
+}
+
+p a:hover {
+    text-decoration: underline;
+}
+

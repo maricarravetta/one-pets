@@ -1,0 +1,102 @@
+/* Estilo global */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+    color: #2A4059; /* Azul marinho da tipografia */
+}
+
+body {
+    background-color: #f9f9f9; /* Fundo neutro */
+    display: flex; /* Usando flexbox para organizar o layout */
+    flex-direction: column; /* Alinha os itens em coluna */
+    min-height: 100vh; /* Garante que o body tenha pelo menos a altura da tela */
+}
+
+/* Cabeçalho */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+/* Container da newsletter */
+.newsletter-container {
+    max-width: 600px;
+    margin: 40px auto;
+    padding: 30px;
+    background-color: #fff; /* Fundo branco para destacar o formulário */
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center; /* Centraliza o texto */
+}
+
+h2 {
+    margin-bottom: 20px;
+    color: #E47AEA; /* Roxo vibrante */
+}
+
+.descricao {
+    margin-bottom: 20px;
+    font-size: 16px;
+}
+
+/* Formulário */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px; /* Aumentei o espaçamento para melhorar a legibilidade */
+}
+
+form input {
+    width: 100%;
+    padding: 12px; /* Aumentei um pouco o padding para melhor conforto ao digitar */
+    font-size: 16px;
+    border: 1px solid #ccc; /* Bordas leves para destacar os campos */
+    border-radius: 5px; /* Cantos arredondados */
+}
+
+form button {
+    background-image: linear-gradient(to right, #E47AEA, #ff7bed);
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding: 12px;
+    font-size: 18px;
+    border-radius: 5px; /* Cantos arredondados */
+}
+
+form button:hover {
+    background-color: #2A4059; /* Cor do botão ao passar o mouse */
+}
+
+/* Footer */
+footer {
+    background-color: #2A4059;    
+    padding: 20px;
+    text-align: center;
+    margin-top: auto; /* Faz o footer ficar no final da página */
+}
+
+footer ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+footer ul li {
+    transition: color 0.3s;
+    color: white;
+}
+
+footer ul li:hover {
+    color: #E47AEA;
+}
+
+footer ul a {
+    text-decoration: none;
+    color: white;
+}
