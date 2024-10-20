@@ -96,10 +96,10 @@ header img {
 
 /* Footer */
 footer {
-    background-color: #2A4059;    
+    background-color: #2A4059;
     padding: 20px;
     text-align: center;
-    margin-top: auto; /* Faz o footer ficar no final da página */
+    /* margin-top removido para garantir que o footer sempre fique no final */
 }
 
 footer ul {
@@ -120,5 +120,5 @@ footer ul li:hover {
 
 footer ul a {
     text-decoration: none;
-    color: white    
+    color: white;
 }
