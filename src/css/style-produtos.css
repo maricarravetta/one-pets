@@ -1,0 +1,224 @@
+/* Estilo global */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+    color: #2A4059; /* Azul marinho da tipografia */
+}
+
+body {
+    background-color: #f9f9f9; /* Fundo neutro */
+    color: #2A4059;
+}
+
+/* Cabeçalho */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    /*background-color: #E47AEA;  Roxo vibrante */    
+}
+
+header img {
+    height: 100px;
+    width: auto;
+}
+
+.search-bar {
+    display: flex;
+    align-items: center;
+    background-color: hsl(0, 0%, 96%);
+    border-radius: 10px;
+    overflow: hidden;
+    width:500px;
+    height: auto;
+}
+
+.search-input {
+    flex: 1;
+    border: solid 1px;
+    border-radius: 10px 0px 0px 10px;
+    border-style: groove;
+    padding: 10px;
+    font-size: 16px;
+}
+
+.search-button {
+    background-color: #2A4059;
+    height: 40px;
+    width: 40px;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.search-button:hover {
+    background-color: #FFC6FF;
+}
+
+.search-button img {
+    width: 100%; 
+    height: auto; 
+}
+
+/* Estilo para a barra de navegação horizontal */
+.nav-links {
+    display: flex; 
+    justify-content: flex-end; 
+    align-items: center; 
+    gap: 20px;  
+    padding: 10px 20px; 
+    font-family: Arial, sans-serif; 
+}
+
+.nav-links a {
+    display: flex;
+    align-items: center; 
+    text-decoration: none; 
+    color: #2A4059; 
+    font-size: 1.1em; 
+    font-weight: bold; 
+}
+
+.nav-links a img {
+    width: 20px; 
+    height: auto;
+    margin-right: 10px; 
+}
+
+.nav-links a:hover {
+    color: #E47AEA; 
+    transition: color 0.3s ease; 
+}
+
+/* Estilização da página de produtos */
+
+main {
+    padding: 20px;
+}
+
+/* Estilo da seção de filtros */
+.filters {
+    margin-bottom: 20px;
+    background-color: #ffffff; 
+    padding: 15px;
+    border-radius: 10px; 
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.filters form {
+    display: flex;
+    align-items: center;
+    gap: 20px; 
+}
+
+.filters label {
+    font-weight: bold;
+    color: #2A4059; 
+}
+
+/* Estilo dos produtos */
+.products {
+    display: flex;
+    flex-wrap: wrap; 
+    gap: 20px; 
+}
+
+.product {
+    background-color: #ffffff; 
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center; 
+    width: calc(25% - 20px); 
+    transition: transform 0.2s; 
+}
+
+.product:hover {
+    transform: scale(1.05); 
+}
+
+.product img {
+    max-width: 100%;
+    height: auto; 
+    border-radius: 10px; 
+}
+
+.product h3 {
+    font-size: 1.3em;
+    margin: 15px 0; 
+    color: #2A4059; 
+}
+
+.product p {
+    font-size: 1em; 
+    margin: 10px 0; 
+    color: #666;
+}
+
+.product span {
+    font-size: 1.5em; 
+    color: #E47AEA; 
+    font-weight: bold; 
+}
+
+.product button {
+    background-color: #2A4059; 
+    color: white; 
+    border: none;
+    border-radius: 5px; 
+    padding: 10px 20px; 
+    cursor: pointer; 
+    font-size: 1em; 
+    transition: background-color 0.3s, transform 0.2s; 
+}
+
+.product button:hover {
+    background-color: #FFC6FF; 
+    transform: translateY(-2px); 
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .product {
+        width: calc(50% - 20px); 
+    }
+}
+
+@media (max-width: 480px) {
+    .product {
+        width: 100%; 
+    }
+}
+
+/* Footer */
+footer {
+    background-color: #2A4059;    
+    padding: 20px;
+    text-align: center;
+    margin-top: auto; /* Faz o footer ficar no final da página */
+}
+
+footer ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+footer ul li {
+    transition: color 0.3s;
+    color: white;
+}
+
+footer ul li:hover {
+    color: #E47AEA;
+}
+
+footer ul a {
+    text-decoration: none;
+    color: white    
+}
