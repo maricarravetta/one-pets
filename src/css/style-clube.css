@@ -1,0 +1,37 @@
+/* Estilos para o conteúdo centralizado do Clube One Pet */
+.clube-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-top: 50px; /* Ajuste de acordo com o espaçamento necessário */
+}
+
+.clube-image {
+    max-width: 30%;
+    height: auto;
+    margin-bottom: -5px;
+}
+
+.clube-texto {
+    font-size: 1.5em;
+    color: #2A4059;
+    margin-bottom: 20px;
+}
+
+.clube-botao {
+    background-color: #E47AEA; /* Roxo vibrante */
+    margin-bottom: 30px;
+    color: #fff;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.2em;
+    transition: background-color 0.3s ease;
+}
+
+.clube-botao:hover {
+    background-color: #FFC6FF; /* Rosa claro */
+}
