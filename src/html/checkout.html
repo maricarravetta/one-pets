@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Suporte</title>
+    <title>Checkout</title>
     <link rel="stylesheet" href="/src/css/style-checkout.css">
     <link rel="stylesheet" href="/src/css/style-Template.css">
 
@@ -31,7 +31,7 @@
             <a href="login.html">
                 <img src="../../Imagens/Home/icone-usuario.png" alt="icone-usuario"> Logar
             </a>
-            <a href="carrinho.html">
+            <a href="checkout.html">
                 <img src="../../Imagens/Home/icone-carrinho.png" alt="icone-carrinho"> Meu Carrinho
             </a>
         </nav>
@@ -40,24 +40,38 @@
         <section>
             <div class="container">
                 <div class="contato">
-                    <h2>Resumo da compra</h2>
-                    <ul class="lista-contato">
-                        <li>Caminha personalizada com nome do seu Pet <strong>R$250,00</strong></li>
-                        <br>
-                        <img src="../../Imagens/Home/Camas_2.jpg" height="150" width="auto" alt="Banner 4">
-                        <li>Coleira personalizada com nome do seu Pet <strong>R$90,00</strong></li>
-                        <br>
-                        <img src="../../Imagens/Home/Coleiras_3.jpg" height="150" width="auto" alt="Categoria 5"> 
-                        <li>Roupinha personalizada com nome do seu Pet <strong>R$50,00</strong></li>
-                        <br>
-                        <img src="../../Imagens/Home/Roupas_2.jpg" height="150" width="auto"  alt="Banner 1">
-                      
-                    </ul>
+                    <main>
+                        <h1>Meu Carrinho</h1>
+                        <section id="carrinho-itens">
+                            <div class="item-carrinho">
+                                <img src="../../Imagens/Home/produto_1.jpg" alt="Produto 1" class="imagem-produto">
+                                <div class="detalhes-produto">
+                                    <h1>Produto 1</h1>
+                                    <p>Preço: R$ 100,00</p>
+                                    <label for="quantidade1">Quantidade:</label>
+                                    <input type="number" id="quantidade1" name="quantidade1" value="1" min="1">
+                                </div>
+                            </div>
+                
+                            <div class="item-carrinho">
+                                <img src="../../Imagens/Home/produto_2.jpg" alt="Produto 2" class="imagem-produto">
+                                <div class="detalhes-produto">
+                                    <h1>Produto 2</h1>
+                                    <p>Preço: R$ 80,00</p>
+                                    <label for="quantidade2">Quantidade:</label>
+                                    <input type="number" id="quantidade2" name="quantidade2" value="1" min="1">
+                                </div>
+                            </div>
+                
+                            <div class="total-carrinho">
+                                <h3>Total: R$ 180,00</h3>
+                            </div>
+                        </section>
+                    </main>
                 </div>
                 <div class="formulario">
                     <form action="#">
-                        <p><strong>Valor total dos produtos R$ 300,00</strong> <span id="valor-total"></span></p>
-                        <br>
+                        
                         <label for="frete">Calcular Frete</label>
                         <input type="text" id="cep" name="frete" placeholder="Digite seu CEP">
                         <label for="entrega"><strong>Prazo de entrega: </strong></label>
@@ -69,7 +83,7 @@
                             <option>Crédito/Débito</option>
                             <option>Boleto á vista</option>
                            </select>
-                        <img src="/src/img/pagamento.jpeg" alt="Formas de pagamento" height="150" width="auto">
+                        <img src="/src/img/pagamento.webp" alt="Formas de pagamento" height="150" width="auto">
                         <button type="submit">Confirmar Pedido</button>
                     </form>
                 </div>              
@@ -99,6 +113,8 @@
     <script src="/src/js/carrossel.js"></script>
 </body>
 </html>
+
+
 
 
 
