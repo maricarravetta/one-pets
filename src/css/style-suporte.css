@@ -222,6 +222,16 @@ form button:hover {
     background-color: #2A4059;
 }
 
+.whatsapp-button.show {
+    opacity: 1;
+    transform: translateY(0);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+}
+.whatsapp-button {
+    opacity: 0;
+    transform: translateY(20px);
+}
+
 /* Footer */
 footer {
     background-color: #2A4059;    
