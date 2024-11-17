@@ -6,7 +6,9 @@
     <title>Produtos</title>
     <link rel="stylesheet" href="../css/style-produtos.css">
     <link rel="stylesheet" href="../css/style-Template.css">
+    <script src="/src/js/produto.js" defer></script>
 </head>
+  
 <body>
     <header>
         <a href="../../index.html">
@@ -218,25 +220,6 @@
            <a href="https://www.instagram.com/"><li>Instagram</li></a>
            <a href="https://www.linkedin.com/"><li>Linkedin</li></a>
        </ul>
-    </footer>
-
-    <script>
-        document.addEventListener("DOMContentLoaded", () => {
-            const categorySelect = document.getElementById("category");
-            const products = document.querySelectorAll(".product");
-
-            categorySelect.addEventListener("change", () => {
-                const selectedCategory = categorySelect.value;
-                products.forEach((product) => {
-                    const productCategory = product.getAttribute("data-category");
-                    if (selectedCategory === "all" || productCategory === selectedCategory) {
-                        product.style.display = "block";
-                    } else {
-                        product.style.display = "none";
-                    }
-                });
-            });
-        });
-    </script>
+    </footer>    
 </body>
 </html>
